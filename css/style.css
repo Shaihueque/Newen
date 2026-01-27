@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.tipoGrafiaRoboto {
+    font-family: "Roboto", sans-serif;
+} 
+.tipoGrafiaLoto {
+    font-family: "Lato", sans-serif;
+}
+
+
+body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer"; 
+}
+
+header{
+    grid-area: header; 
+    background-color: black;
+    color: white;
+    font-family:"Roboto", sans-serif;
+}
+
+main{
+    grid-area: main;
+    font-family: "Lato", sans-serif;
+    background-color: white; 
+}
+
+.sidebar { 
+    grid-area: sidebar; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.seccionHeader{
+    display: grid;
+    grid-template-columns: 0.25fr 2.25fr 0.75fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "contenedorMenuhamburgesa"
+        "contenedorLogo"
+        "contenedorIconosUserCart"
+        "contenedorFormulario"; 
+
+        align-items: center;
+        align-content: center;
+}
+
+.contenedorMenuhamburgesa{
+    padding: 10px;
+}
+.contenedorLogo{
+    display: flex;
+    justify-content: center;
+padding: 5px;
+}
+.contenedorIconosUserCart{
+padding: 5px;
+display: flex;
+}
+
+.menuHamburgesa{
+    width: 40px;
+}
+
+.logo{
+    width: 85px;
+}
+
+.iconoUsurCart{
+    width: 40px;
+}
+
+main img{
+    width: 100%;
+}
+
+.nombreSeccion{
+    margin: 10px 10px 0px 10px;
+}
+
+.seccionCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cards";
+        justify-items: center;
+}
+
+.nombreSeccion{
+    width: 100%;
+}
+
+.cards{
+    width: 90%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5%;
+    margin: 10px 0;
+}
+
+.cards img{
+    width: 100%;
+    border-radius: 5% 5% 0 0 ;
+}
+
+.contenedorImgCard{
+    background-color: rgb(233, 232, 233);
+    border-radius: 5% 5% 0 0;
+}
+
+.contenedorDescripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameProducto{
+    font-size: 15px;
+    font-weight: bold;  
+    padding-top: 10px;
+}
+
+.priceProducto{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.generoProducto{
+    font-size: 12px;
+}
+
+.quienSomos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+.tituloQuienSomos{
+    margin-top: 10px;
+}
+
+.textQuienSomos {
+    margin: 0px 10px 10px 10px;
+    text-align: justify;
+}
+.invitacionRegistro{
+    margin: 10px;
+    text-align: justify;
+}
+
+.btn-registrarse{
+    background-color: rgb(50, 161, 173);
+    width: 55%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid 1px rgb(30 114 123);
+}
+
+.btn-registrarse a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white; 
+}
+
+.listaFooter{
+    list-style: none;
+    text-transform: uppercase;
+    /*border-bottom: solid 1px gray;*/
+}
+
+.itemDeLista{
+    margin: 10px;
+    font-size: 15px;
+}
+.itemDeLista a{
+    text-decoration: none;
+    color: white;
+}
+
+.contenedorTarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "tarjetas";
+    justify-items: center;
+        
+}
+
+.tarjetas{
+    width: 75%;
+}
+
+.tarjetasFooter{
+    border-radius: 10%;
+    margin: 5px;
+}
+
+.footerRedes{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.iconoRedesFooter{
+    width: 45px;
+}
+
+.derechoDeAutor{
+    display: flex;
+    justify-content: center;
+}
