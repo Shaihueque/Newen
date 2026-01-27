@@ -232,6 +232,10 @@ footer{
     width: 45px;
 }
 
+.enlaceiconoRedesFooter{
+    text-decoration: none;
+}
+
 .derechoDeAutor{
     display: flex;
     justify-content: center;
