@@ -56,8 +56,7 @@ a{
         "contenedorMenuhamburgesa"
         "contenedorLogo"
         "contenedorIconosUserCart"
-        "contenedorFormulario"; 
-
+        "contenedorFormulario";
         align-items: center;
         align-content: center;
 }
@@ -69,6 +68,7 @@ a{
     display: flex;
     justify-content: center;
 padding: 5px;
+grid-column: 2 / 3;
 }
 .contenedorIconosUserCart{
 padding: 5px;
