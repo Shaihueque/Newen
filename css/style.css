@@ -305,3 +305,42 @@ footer{
 .text-btnAregistro{
     color: rgb(30 114 123);
 }
+
+/*REGISTRO*/
+
+.seccionRegistrarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.formRegistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+}
+
+.contenedorCheckbox{
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.seleccionImagen{
+    font-size: 12px;
+}
+
+.btn-registro{
+    width: 60%;
+    margin-bottom: 25px;
+}
