@@ -420,7 +420,18 @@ footer{
         display: none;
     }
     .contenedorFormulario{
-        display: block;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formularioArtesanal{
+        display: flex;
+    }
+
+    .buscadorInput{
+        display: flex;
     }
     .navArtesanal{
         display: flex;
