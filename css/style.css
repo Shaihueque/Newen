@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/*Tipografias*/
 .tipoGrafiaRoboto {
     font-family: "Roboto", sans-serif;
 } 
@@ -48,9 +48,10 @@ a{
     color: white;
 }
 
+/*Header*/
 .seccionHeader{
     display: grid;
-    grid-template-columns: 0.25fr 2.25fr 0.75fr;
+    grid-template-columns: 0.25fr 2.5fr 0.50fr;;
         grid-template-rows: auto;
         grid-template-areas:
         "contenedorMenuhamburgesa"
@@ -69,6 +70,10 @@ a{
     justify-content: center;
 padding: 5px;
 grid-column: 2 / 3;
+}
+/*contenedor de formulario buscador*/
+.contenedorFormulario{
+    display: none;
 }
 .contenedorIconosUserCart{
 padding: 5px;
@@ -91,6 +96,13 @@ display: flex;
     width: 40px;
 }
 
+.navArtesanal{
+    display: none;
+}
+
+/*Fin de header*/
+
+/*MAIN*/
 main img{
     width: 100%;
 }
@@ -98,7 +110,7 @@ main img{
 .nombreSeccion{
     margin: 10px 10px 0px 10px;
 }
-
+/* cards*/
 .seccionCards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,6 +163,7 @@ main img{
     font-size: 12px;
 }
 
+/*Seccion quienes somos*/
 .quienSomos{
     display: flex;
     flex-wrap: wrap;
@@ -186,6 +199,7 @@ main img{
     text-decoration: none;
 }
 
+/*FOOTER*/
 footer{
     grid-area: footer;
     background-color: black;
@@ -207,6 +221,7 @@ footer{
     color: white;
 }
 
+/*tarjetas demedios de pago*/
 .contenedorTarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -226,6 +241,7 @@ footer{
     margin: 5px;
 }
 
+/*Redes sociales*/
 .footerRedes{
     display: flex;
     justify-content: center;
@@ -344,4 +360,79 @@ footer{
 .btn-registro{
     width: 60%;
     margin-bottom: 25px;
+}
+
+
+@media (min-width: 768px) {
+    /*MAIN*/
+
+    /*Cards*/
+.seccionCards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.SeccionQuieresSomos{
+    background-color: rgb(59, 59, 59);
+        display: flex;
+        justify-content: center;
+}
+
+/*Quienes somos*/
+.quienSomos{
+        width: 90%;
+}
+
+.btn-registrarse{
+    width: 40%;
+}
+
+/*FOOTER*/
+
+.contenedorListaFooter{
+    margin-top: 10px;
+}
+.listaFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+/*Tarjetas*/
+.contenedorTarjetas{
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.tarjetas {
+    width: 45%;
+}
+}
+
+@media (min-width: 1024px) {
+    .seccionHeader {
+        grid-template-columns: 0.50fr 2fr 0.50fr;
+        justify-items: center;
+    }
+    .contenedorLogo {
+    grid-column: 1 / 2;
+    }
+
+    .navbar{
+        display: none;
+    }
+    .contenedorFormulario{
+        display: block;
+    }
+    .navArtesanal{
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .listaNabVar{
+        list-style: none;
+        display: flex;
+        gap: 15%;
+        justify-content: center;
+        width: 80%;
+    }
 }
