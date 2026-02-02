@@ -8,5 +8,7 @@
 
 -Agregue iconos y tienen funcionalidad, para ir a registro o iniciar sesion, carrito (aun que todavia no lo trabaje en css), y el menu hamburgesa y carrusel es de boostrap.
 
+-No hice responsibe para 1440 porque mi pantalla no me daba y no sabia como iba a quedar, asique solo hice hasta 1024 que es lo que mi pantalla me dejaba observar. Asique puede que mucho mas alla de eso se rompa algo y no pude verlo :S
+
 -Tambien pueden ver los wireframe en:
 https://whimsical.com/prueba-1-6z9iHeSJDYH53UAQUcNSBd

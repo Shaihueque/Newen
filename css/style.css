@@ -204,6 +204,7 @@ footer{
     grid-area: footer;
     background-color: black;
     color: white; 
+    border-top: solid 1px #5f5e5e;
 }
 
 .listaFooter{
@@ -405,9 +406,19 @@ footer{
 .tarjetas {
     width: 45%;
 }
+
+/*Inicio de sesion*/
+.btn-IniciarSesion {
+    width: 30%;  
+}
+.btn-IrRegistro {
+    width: 30%;
+}
 }
 
 @media (min-width: 1024px) {
+
+    /*HEADER*/
     .seccionHeader {
         grid-template-columns: 0.50fr 2fr 0.50fr;
         justify-items: center;
@@ -446,4 +457,42 @@ footer{
         justify-content: center;
         width: 80%;
     }
+/*Quienes somos*/
+    .quienSomos {
+        width: 80%;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    }
+        .btn-registrarse {
+        width: 30%;
+    }
+
+/*tarjetas footer*/
+    .contenedorTarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tarjeta1{
+    grid-column: 2 / 3;
+}
+
+
+.tarjeta5{
+    grid-column: 2 / 3;
+}
+
+/*Inicio de sesion*/
+.btn-IniciarSesion {
+    width: 20%;  
+}
+.btn-IrRegistro {
+    width: 20%;
+}
+
+}
+
+@media (min-width: 1440px) {
+    
 }
