@@ -464,6 +464,11 @@ footer{
 .btn-IrRegistro {
     width: 30%;
 }
+
+/*Carrito*/
+.contenedorImgProducto {
+    width: 20%;
+}
 }
 
 @media (min-width: 1024px) {
@@ -566,6 +571,22 @@ footer{
     transition: all 0.3s ease 0s;
 }
 
+/*Carrito*/
+.seccionCarrito{
+    display: flex;
+}
+
+.contenedorProducto{
+        width: 50%;
+}
+.contenedorImgProducto {
+    width: 40%;
+}
+
+.btn-Comprar{
+    transition: all 0.3s ease 0s;
+}
+
 /*PseudoClases cards*/
 
 .logo:hover{
@@ -613,6 +634,12 @@ footer{
     transform: scale(1.1);
     box-shadow: 0px 15px 20px rgb(29, 99, 107);
    }
+
+   /*Carrito*/
+   .btn-Comprar:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 15px 20px rgb(29, 99, 107);
+}
 }
 
 @media (min-width: 1440px) {
