@@ -432,27 +432,37 @@ footer{
     .contenedorLogo {
     grid-column: 1 / 2;
     }
+    .logo{
+        transition: all 0.5s ease
+    }
 /*Iconos de header*/
     .iconoUsurCart{
          transition: all 0.5s ease
     }
-
+/*navbar*/
     .navbar{
         display: none;
+    }
+    .listaNav{
+        transition: all 0.5s ease;
     }
     .contenedorFormulario{
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
     .formularioArtesanal{
         display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
     .buscadorInput{
         display: flex;
+        width: 60%;
     }
     .navArtesanal{
         display: flex;
@@ -504,16 +514,26 @@ footer{
 
 /*Inicio de sesion*/
 .btn-IniciarSesion {
-    width: 20%;  
+    width: 20%;
+    transition: all 0.3s ease 0s;  
 }
 .btn-IrRegistro {
     width: 20%;
+    transition: all 0.3s ease 0s;
 }
 
 /*PseudoClases cards*/
+
+.logo:hover{
+        transform: translateY(+7px);
+    }
 .iconoUsurCart:hover{
     transform: scale(1.2);
 }
+
+.listaNav:hover{
+        transform: scale(1.2);
+    }
 
 .cards:hover {
     box-shadow: 0px 0px 30px 1px rgba(59, 59, 59);
@@ -538,6 +558,16 @@ footer{
    .iconoRedesFooter:hover{
     cursor: pointer;
     transform: translateY(-7px);
+   }
+
+   /*Iniciar Sesion Pseudoclases*/
+   .btn-IniciarSesion:hover{
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: scale(1.1);
+   }
+   .btn-IrRegistro:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 15px 20px rgb(29, 99, 107);
    }
 }
 

@@ -1,4 +1,4 @@
--Hice todo responsive, sin embargo mas alla que grege estilo no agrege pseudoclases para click o pasar el mouse sobre cards o botones o cosas por el estilo.
+-Puse pocos pseudoclases, los formularios casi no le puse estilo, ire agregando los que me faltan.
 
 -Para volver a inicio se hace click a la imagen del logo Newen.
 
