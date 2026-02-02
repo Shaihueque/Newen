@@ -1,4 +1,4 @@
--Puse pocos pseudoclases, los formularios casi no le puse estilo, ire agregando los que me faltan.
+-Me olvide las pseudoclases para mobile / tablets :S
 
 -Para volver a inicio se hace click a la imagen del logo Newen.
 
