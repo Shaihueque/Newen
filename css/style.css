@@ -400,11 +400,17 @@ footer{
 }
 /*Tarjetas*/
 .contenedorTarjetas{
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;;
 }
 
 .tarjetas {
     width: 45%;
+}
+.tarjeta1{
+    grid-column: 2 / 3;
+}
+.tarjeta5{
+    grid-column: 2 / 3;
 }
 
 /*Inicio de sesion*/
@@ -425,6 +431,10 @@ footer{
     }
     .contenedorLogo {
     grid-column: 1 / 2;
+    }
+/*Iconos de header*/
+    .iconoUsurCart{
+         transition: all 0.5s ease
     }
 
     .navbar{
@@ -457,6 +467,10 @@ footer{
         justify-content: center;
         width: 80%;
     }
+/*Cards*/
+    .cards{
+        transition: all .2s;
+    }
 /*Quienes somos*/
     .quienSomos {
         width: 80%;
@@ -483,6 +497,11 @@ footer{
     grid-column: 2 / 3;
 }
 
+/*Iconos redes sociales*/
+.iconoRedesFooter{
+    transition: all 0.3s ease 0s;
+}
+
 /*Inicio de sesion*/
 .btn-IniciarSesion {
     width: 20%;  
@@ -491,6 +510,35 @@ footer{
     width: 20%;
 }
 
+/*PseudoClases cards*/
+.iconoUsurCart:hover{
+    transform: scale(1.2);
+}
+
+.cards:hover {
+    box-shadow: 0px 0px 30px 1px rgba(59, 59, 59);
+   }
+
+   .cards:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+
+   /*Boton Registrarse Inicio*/
+   .btn-registrarse{
+    transition: all 0.3s ease 0s;
+   }
+   .btn-registrarse:hover{
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+   }
+
+   /*Footer tarjetas*/
+   .iconoRedesFooter:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+   }
 }
 
 @media (min-width: 1440px) {
