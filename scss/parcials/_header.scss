@@ -1,0 +1,114 @@
+@use '../variables' as *;
+@use '../mixin';
+
+    header{
+        section.seccionHeader{
+            display: grid;
+            grid-template-columns: 0.25fr 2.5fr 0.50fr;;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "contenedorMenuhamburgesa"
+            "contenedorLogo"
+            "contenedorIconosUserCart"
+            "contenedorFormulario";
+            align-items: center;
+            align-content: center;
+
+            @include mixin.escritorio{
+                grid-template-columns: 0.50fr 2fr 0.50fr;
+                justify-items: center;
+
+                .navbar{
+                    display: none;
+                }
+            }
+            
+            nav.contenedorMenuhamburgesa{
+                padding: $espacio-10px;
+            }
+
+            div.contenedorLogo{
+                @include mixin.flex (center, center);
+                padding: $espacio-5px;
+                grid-column: 2 / 3;
+
+                @include mixin.escritorio{
+                    grid-column: 1 / 2;
+                }
+
+                .logo{
+                    width: 85px;
+                    @include mixin.escritorio{
+                        transition: all 0.5s ease;
+
+                        &:hover{
+                        transform: translateY(+7px);
+                    }
+                    }
+                    
+                }
+            }
+            div.contenedorFormulario{
+                display: none;
+                @include mixin.escritorio{
+                    
+                    @include mixin.flex(center, center);
+                    width: 100%;
+                    align-content: center;
+
+                    .formularioArtesanal{
+                        @include mixin.flex(center, center);
+                        align-items: normal;
+                        width: 100%;
+
+                        .buscadorInput{
+                            display: flex;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+            div.contenedorIconosUserCart{
+                padding: $espacio-5px;
+                display: flex;
+
+                .iconoUsurCart{
+                    width: 40px;
+                    @include mixin.escritorio{
+                        transition: all 0.5s ease;
+                        &:hover{
+                        transform: scale(1.2);
+                    }
+                    }
+                }
+            }
+
+            .navbarSecundario{
+                width: $ancho-25;
+            }
+        }
+        nav.navArtesanal{
+            display: none;
+                @include mixin.escritorio{
+                    @include mixin.flex(center, center);
+                    width: 100%;
+                    margin-top: $espacio-12px;
+
+                    .listaNabVar{
+                        list-style: none;
+                        display: flex;
+                        gap: 15%;
+                        justify-content: center;
+                        width: 80%;
+                    }
+
+                    .listaNav{
+                    transition: all 0.5s ease;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                }
+        }
+            
+    }
+}

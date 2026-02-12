@@ -1,0 +1,57 @@
+@use '../variables' as *;
+@use '../mixin';
+@use '../extend';
+
+main{
+    .seccionRegistrarse{
+        @include mixin.flex(center,center);
+        flex-direction: column;
+        
+        .contenedorForm{
+            width: 90%;
+            margin-top: $espacio-24px;
+                @include mixin.escritorio{
+                    @include mixin.flex(center, center);
+                    flex-direction: column;
+                    align-content: center;
+                }
+
+            .formRegistro{
+                @include mixin.flex(center,center);
+                flex-direction: column;
+                width: 80%;
+                gap: $espacio-5px;
+
+                .contenedorCheckbox{
+                    display: flex;
+                    gap: $espacio-24px;
+                    font-size: $espacio-12px;
+                }
+
+                .seleccionImagen{
+                    font-size: $espacio-12px;
+                }
+
+                .btn-registro{
+                    @extend.btn-registrarse;
+                    width: 60%;
+                    margin-bottom: $espacio-24px;
+                    color: $color-secundary;
+
+                    @include mixin.tablet{
+                    width: 30%;
+                }
+                    @include mixin.escritorio{
+                    width: 20%;
+                    transition: all 0.3s ease 0s;
+                        &:hover{
+                            cursor: pointer;
+                            box-shadow: 0px 15px 20px $color-btn-primary;
+                            transform: translateY(-7px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

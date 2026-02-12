@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/style.css"/>-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header>
+        <Section class="seccionHeader">
+            <!-- Menu hamburgesa -->
+             <nav class="navbar contenedorMenuhamburgesa fixed-top navbarSecundario">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color:white">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="Assest/img/logonegro.png" alt="Newen" class="logo">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pages/iniciarSesion.html">Iniciar Sesion</a>
+            <a class="nav-link" href="pages/registrarse.html">Registrarse</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nuestros Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/remeras.html">Remeras</a></li>
+              <li><a class="dropdown-item" href="pages/buzos.html">Buzos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+                </ul>
+                </li>
+                </ul>
+            <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+             <!-- Menu hamburgesa 
+            <div class="contenedorMenuhamburgesa">
+                <img src="Assest/iconos/bar-de-hamburguesas.png" alt="Menu" class="menuHamburgesa">
+            </div>-->
+
+             <!-- Logo -->
+            <div class="contenedorLogo">
+                <a href="index.html">
+                    <img src="Assest/img/logonegro.png" alt="Newen" class="logo">
+                </a>
+            </div>
+
+            <!-- Formulario de busqueda -->
+             
+            <div class="contenedorFormulario">
+                <form action="#" method="get" class="formularioArtesanal">
+                    <input type="text" placeholder="Busque su producto" class="buscadorInput">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            
+
+            <!-- Inicio de sesion y el carrito -->
+            <div class="contenedorIconosUserCart">
+                <a href="pages/iniciarSesion.html"><img src="Assest/iconos/icono-usuario-blanco.png" alt="Iniciar Sesion" class="iconoUsurCart"></a>
+                <a href="pages/carrito.html"><img src="Assest/iconos/icono-carrito-de-compras.png" alt="Carrito" class="iconoUsurCart"></a>
+            </div>
+        </Section>
+
+        <!-- menu artesanal-->
+        <nav class="navArtesanal">
+            <ul class="listaNabVar">
+                <li class="listaNav"><a href="index.html">Inicio</a></li>
+                <li class="listaNav"><a href="pages/remeras.html">Remeras</a></li>
+                <li class="listaNav"><a href="pages/buzos.html">Buzos</a></li>
+                <li class="listaNav"><a href="pages/iniciarSesion.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main>
+        <!-- Carrusel -->
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Assest/img/Montaña2p.png" class="d-block w-100" alt="Momento especial">
+    </div>
+    <div class="carousel-item">
+      <img src="Assest/img/playa2p.png" class="d-block w-100" alt="Momento especial">
+    </div>
+    <div class="carousel-item">
+      <img src="Assest/img/mix2p.png" class="d-block w-100" alt="Momento especial">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+        <!-- Cards -->
+         <h3 class="nombreSeccion">Productos mas vistos</h3>
+        <section class="seccionCards">
+             <!-- 
+            <h3 class="nombreSeccion">Productos mas vistos</h3>
+             -->
+                <div class="cards card1">
+                    <div class="contenedorImgCard">
+                        <img src="Assest/img/remera_oversize_negra.png" alt="Remera Oversize Negra">
+                    </div>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Negra</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
+                    </div>
+                </div>
+                <div class="cards card2">
+                     <div class="contenedorImgCard">
+                        <img src="Assest/img/remera_oversize_verdepino.png" alt="Remera Oversize Verde pino">
+                    </div>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Verde Pino</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
+                    </div>
+                </div>
+                <div class="cards cards">
+                    <div class="contenedorImgCard">
+                        <img src="Assest/img/remera_oversize_blanca.png" alt="Remera Oversize blanca">
+                    </div>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Blanca</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
+                    </div>
+                </div>
+                <div class="cards cards">
+                    <div class="contenedorImgCard">
+                        <img src="Assest/img/remera_oversize_azulmarino.png" alt="Remera Oversize azulmarino">
+                    </div>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Azulmarino</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- Seccion de quienes somos -->
+        <section class="SeccionQuieresSomos">
+            <div class="quienSomos">
+                <h2 class="tituloQuienSomos">Quienes Somos</h2>
+                <p class="textQuienSomos"> Somos un grupo de amigos que empezamos a emprender. Algo en comun que tenemos es que nos gusta vestirnos con ropa de calidad. Siempre nos costo encontrar un producto que nos deje satisfechos, asique decidimos crear el nuestro a gusto. Te invitamos a que te sumes a probar topa de calidad y de la mejor tela que vas a encontrar en el mercado.</p>
+                <h4 class="invitacionRegistro">Si todavia no tenes tu cuenta, te invitamos a unirte!!</h4>
+                <button type="button" class="btn-registrarse"><a href="pages/registrarse.html">REGISTRARSE</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- lista de opciones -->
+        <div class="contenedorListaFooter">
+            <ul class="listaFooter">
+                <li class="itemDeLista"><a href="#">Nuestros Productos</a></li>
+                <li class="itemDeLista"><a href="#">WSP</a></li>
+                <li class="itemDeLista"><a href="#">Email</a></li>
+            </ul>
+        </div>
+        <!-- Tarjetas -->
+        <div class="contenedorTarjetas">
+            <img src="Assest/img/banelco.png" alt="Banelco" class="tarjetasFooter tarjetas tarjeta1">
+            <img src="Assest/img/mercadopago.png" alt="Mercado Pago" class="tarjetasFooter tarjetas tarjeta2">
+            <img src="Assest/img/naranja.png" alt="Naranja" class="tarjetasFooter tarjetas tarjeta3">
+            <img src="Assest/img/paypal.png" alt="Paypal" class="tarjetasFooter tarjetas tarjeta4">
+            <img src="Assest/img/tarjeta-americanexpress.png" alt="American Express" class="tarjetasFooter tarjetas tarjeta5">
+            <img src="Assest/img/rapipago.png" alt="Rapipago" class="tarjetasFooter tarjetas tarjeta6">
+            <img src="Assest/img/tarjeta-visa.png" alt="Visa" class="tarjetasFooter tarjetas tarjeta7">
+            <img src="Assest/img/tarjeta-mastercard.png" alt="Mastercard" class="tarjetasFooter tarjetas tarjeta8">
+        </div>
+         <!-- Redes sociales -->
+        <div class="footerRedes">
+            <a href="#" class="enlaceiconoRedesFooter"><img class="iconoRedesFooter" src="Assest/iconos/instagram (1).png" alt="Instagram"></a>
+            <a href="#" class="enlaceiconoRedesFooter"><img class="iconoRedesFooter" src="Assest/iconos/facebook.png" alt="Facebook"></a>
+            <a href="#" class="enlaceiconoRedesFooter"><img class="iconoRedesFooter" src="Assest/iconos/twiter.png" alt="Twitter"></a>
+        </div>
+
+        <div class="derechoDeAutor">
+            <p>Derechos reservados al creador</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

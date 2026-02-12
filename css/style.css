@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Tipografias*/
+/*Tipografia de header*/
+.tipoGrafiaRoboto {
+    font-family: "Roboto", sans-serif;
+} 
+/*Tipografia de Main*/
+.tipoGrafiaLoto {
+    font-family: "Lato", sans-serif;
+}
+
+
+body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer"; 
+}
+
+header{
+    grid-area: header; 
+    background-color: black;
+    color: white;
+    font-family:"Roboto", sans-serif;
+}
+
+main{
+    grid-area: main;
+    font-family: "Lato", sans-serif;
+    background-color: white; 
+}
+
+.sidebar { 
+    grid-area: sidebar; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Header*/
+.seccionHeader{
+    display: grid;
+    grid-template-columns: 0.25fr 2.5fr 0.50fr;;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "contenedorMenuhamburgesa"
+        "contenedorLogo"
+        "contenedorIconosUserCart"
+        "contenedorFormulario";
+        align-items: center;
+        align-content: center;
+}
+
+.contenedorMenuhamburgesa{
+    padding: 10px;
+}
+.contenedorLogo{
+    display: flex;
+    justify-content: center;
+padding: 5px;
+grid-column: 2 / 3;
+}
+/*contenedor de formulario buscador*/
+.contenedorFormulario{
+    display: none;
+}
+.contenedorIconosUserCart{
+padding: 5px;
+display: flex;
+}
+
+.navbarSecundario{
+    width: 25%;
+}
+/*ESTE MENU NO ES
+.menuHamburgesa{
+    width: 40px;
+}*/
+
+.logo{
+    width: 85px;
+}
+
+.iconoUsurCart{
+    width: 40px;
+}
+
+.navArtesanal{
+    display: none;
+}
+
+/*Fin de header*/
+
+/*MAIN*/
+
+main img{
+    width: 100%;
+}
+
+.nombreSeccion{
+    margin: 10px 10px 0px 10px;
+}
+/* cards*/
+.seccionCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cards";
+        justify-items: center;
+}
+
+.nombreSeccion{
+    width: 100%;
+}
+
+.cards{
+    width: 90%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5%;
+    margin: 10px 0;
+    border: solid 1px rgb(241, 241, 241);
+}
+
+.cards img{
+    width: 100%;
+    border-radius: 5% 5% 0 0 ;
+}
+
+.contenedorImgCard{
+    background-color: rgb(233, 232, 233);
+    border-radius: 5% 5% 0 0;
+}
+
+.contenedorDescripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameProducto{
+    font-size: 15px;
+    font-weight: bold;  
+    padding-top: 10px;
+}
+
+.priceProducto{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.generoProducto{
+    font-size: 12px;
+}
+
+/*Seccion quienes somos*/
+.quienSomos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+.tituloQuienSomos{
+    margin-top: 10px;
+}
+
+.textQuienSomos {
+    margin: 0px 10px 10px 10px;
+    text-align: justify;
+}
+.invitacionRegistro{
+    margin: 10px;
+    text-align: justify;
+}
+
+.btn-registrarse{
+    background-color: rgb(50, 161, 173);
+    width: 55%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid 1px rgb(30 114 123);
+}
+
+.btn-registrarse a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white; 
+    border-top: solid 1px #5f5e5e;
+}
+
+.listaFooter{
+    list-style: none;
+    text-transform: uppercase;
+    /*border-bottom: solid 1px gray;*/
+}
+
+.itemDeLista{
+    margin: 10px;
+    font-size: 15px;
+}
+.itemDeLista a{
+    text-decoration: none;
+    color: white;
+}
+
+/*tarjetas demedios de pago*/
+.contenedorTarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "tarjetas";
+    justify-items: center;
+        
+}
+
+.tarjetas{
+    width: 75%;
+}
+
+.tarjetasFooter{
+    border-radius: 10%;
+    margin: 5px;
+}
+
+/*Redes sociales*/
+.footerRedes{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.iconoRedesFooter{
+    width: 45px;
+}
+
+.enlaceiconoRedesFooter{
+    text-decoration: none;
+}
+
+.derechoDeAutor{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* INICIO DE SESION*/
+.seccionFormularioInicioSesion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formularioInicioSesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 25px;
+    gap: 5px;
+}
+
+.btn-IniciarSesion{
+    background-color: rgb(50, 161, 173);
+    color: white;
+    width: 45%;
+    border: solid 1px rgb(30 114 123);
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.pie-form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.pie-form a{
+    color: #9b9b9b;
+}
+
+.RegistroDesdeInicioSesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 10px 10px 25px 10px;
+}
+
+.btn-IrRegistro{
+    background-color: rgb(249 249 249);
+    width: 45%;
+    border: solid 2px rgb(30 114 123);
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.text-btnAregistro{
+    color: rgb(30 114 123);
+}
+
+/*REGISTRO*/
+
+.seccionRegistrarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.formRegistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+}
+
+.contenedorCheckbox{
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.seleccionImagen{
+    font-size: 12px;
+}
+
+.btn-registro{
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+/*CARRITO*/
+.contenedorProducto {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border: solid 1px rgb(211 210 210);
+}
+.contenedorImgProducto{
+    width: 35%;
+    border-right: solid 1px rgb(211 210 210);
+}
+.contenedorDescripcionProducto{
+    width: 70%;
+    margin-left: 15px;
+}
+
+.contenedorResumen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    border: solid 1px rgb(211 210 210);
+    padding: 10px;
+}
+.tituloResumen{
+    width: 100%;
+}
+.cantidadProductos{
+    width: 70%;
+}
+.totalPagar{
+    width: 30%;
+}
+
+.btn-Comprar{
+    background-color: rgb(50, 161, 173);
+    color: white;
+    width: 45%;
+    border: solid 1px rgb(30 114 123);
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+@media (min-width: 768px) {
+    /*MAIN*/
+
+    /*Cards*/
+.seccionCards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.SeccionQuieresSomos{
+    background-color: rgb(59, 59, 59);
+        display: flex;
+        justify-content: center;
+}
+
+/*Quienes somos*/
+.quienSomos{
+        width: 90%;
+}
+
+.btn-registrarse{
+    width: 40%;
+}
+
+/*FOOTER*/
+
+.contenedorListaFooter{
+    margin-top: 10px;
+}
+.listaFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+/*Tarjetas*/
+.contenedorTarjetas{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;;
+}
+
+.tarjetas {
+    width: 45%;
+}
+.tarjeta1{
+    grid-column: 2 / 3;
+}
+.tarjeta5{
+    grid-column: 2 / 3;
+}
+
+/*Inicio de sesion*/
+.btn-IniciarSesion {
+    width: 30%;  
+}
+.btn-IrRegistro {
+    width: 30%;
+}
+
+/*Carrito*/
+.contenedorImgProducto {
+    width: 20%;
+}
+}
+
+@media (min-width: 1024px) {
+
+    /*HEADER*/
+    .seccionHeader {
+        grid-template-columns: 0.50fr 2fr 0.50fr;
+        justify-items: center;
+    }
+    .contenedorLogo {
+    grid-column: 1 / 2;
+    }
+    .logo{
+        transition: all 0.5s ease
+    }
+/*Iconos de header*/
+    .iconoUsurCart{
+         transition: all 0.5s ease
+    }
+/*navbar*/
+    .navbar{
+        display: none;
+    }
+    .listaNav{
+        transition: all 0.5s ease;
+    }
+    .contenedorFormulario{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formularioArtesanal{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buscadorInput{
+        display: flex;
+        width: 60%;
+    }
+    .navArtesanal{
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    .listaNabVar{
+        list-style: none;
+        display: flex;
+        gap: 15%;
+        justify-content: center;
+        width: 80%;
+    }
+/*Cards*/
+    .cards{
+        transition: all .2s;
+    }
+/*Quienes somos*/
+    .quienSomos {
+        width: 80%;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    }
+        .btn-registrarse {
+        width: 30%;
+    }
+
+/*tarjetas footer*/
+    .contenedorTarjetas {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tarjeta1{
+    grid-column: 2 / 3;
+}
+
+
+.tarjeta5{
+    grid-column: 2 / 3;
+}
+
+/*Iconos redes sociales*/
+.iconoRedesFooter{
+    transition: all 0.3s ease 0s;
+}
+
+/*Inicio de sesion*/
+.btn-IniciarSesion {
+    width: 20%;
+    transition: all 0.3s ease 0s;  
+}
+.btn-IrRegistro {
+    width: 20%;
+    transition: all 0.3s ease 0s;
+}
+
+/*Carrito*/
+.seccionCarrito{
+    display: flex;
+}
+
+.contenedorProducto{
+        width: 50%;
+}
+.contenedorImgProducto {
+    width: 40%;
+}
+
+.btn-Comprar{
+    transition: all 0.3s ease 0s;
+}
+
+/*PseudoClases cards*/
+
+.logo:hover{
+        transform: translateY(+7px);
+    }
+.iconoUsurCart:hover{
+    transform: scale(1.2);
+}
+
+.listaNav:hover{
+        transform: scale(1.2);
+    }
+
+.cards:hover {
+    box-shadow: 0px 0px 30px 1px rgba(59, 59, 59);
+   }
+
+   .cards:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+
+   /*Boton Registrarse Inicio*/
+   .btn-registrarse{
+    transition: all 0.3s ease 0s;
+   }
+   .btn-registrarse:hover{
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+   }
+
+   /*Footer tarjetas*/
+   .iconoRedesFooter:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+   }
+
+   /*Iniciar Sesion Pseudoclases*/
+   .btn-IniciarSesion:hover{
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: scale(1.1);
+   }
+   .btn-IrRegistro:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 15px 20px rgb(29, 99, 107);
+   }
+
+   /*Carrito*/
+   .btn-Comprar:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 15px 20px rgb(29, 99, 107);
+}
+}
+
+@media (min-width: 1440px) {
+    
+}

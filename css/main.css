@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*TIPOGRAFIAS*/
+/*COLORES DE FONDO Y LETRA*/
+/*COLORES DE FONDO Y BORDER ESPECIFICOS*/
+/*COLORES DE BOTONES*/
+/*MEDIDAS STANDAR rem*/
+/*MEDIDAS FIJAS ESPECIFICAS*/
+/*ANCHOS TRABAJADOS*/
+/*BREAKPOINTS*/
+/*responsive mobile*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+header .logo {
+  width: 85px;
+}
+header .iconoUsurCart {
+  width: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "sidebar" "footer";
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  grid-area: main;
+  font-family: "Lato", sans-serif;
+  background-color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  border-top: solid 1px #5f5e5e;
+}
+
+header section.seccionHeader {
+  display: grid;
+  grid-template-columns: 0.25fr 2.5fr 0.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: "contenedorMenuhamburgesa" "contenedorLogo" "contenedorIconosUserCart" "contenedorFormulario";
+  align-items: center;
+  align-content: center;
+}
+@media (min-width: 1024px) {
+  header section.seccionHeader {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    justify-items: center;
+  }
+  header section.seccionHeader .navbar {
+    display: none;
+  }
+}
+header section.seccionHeader nav.contenedorMenuhamburgesa {
+  padding: 0.6rem;
+}
+header section.seccionHeader div.contenedorLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  grid-column: 2/3;
+}
+@media (min-width: 1024px) {
+  header section.seccionHeader div.contenedorLogo {
+    grid-column: 1/2;
+  }
+}
+header section.seccionHeader div.contenedorLogo .logo {
+  width: 85px;
+}
+@media (min-width: 1024px) {
+  header section.seccionHeader div.contenedorLogo .logo {
+    transition: all 0.5s ease;
+  }
+  header section.seccionHeader div.contenedorLogo .logo:hover {
+    transform: translateY(7px);
+  }
+}
+header section.seccionHeader div.contenedorFormulario {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header section.seccionHeader div.contenedorFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+  }
+  header section.seccionHeader div.contenedorFormulario .formularioArtesanal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: normal;
+    width: 100%;
+  }
+  header section.seccionHeader div.contenedorFormulario .formularioArtesanal .buscadorInput {
+    display: flex;
+    width: 60%;
+  }
+}
+header section.seccionHeader div.contenedorIconosUserCart {
+  padding: 0.3rem;
+  display: flex;
+}
+header section.seccionHeader div.contenedorIconosUserCart .iconoUsurCart {
+  width: 40px;
+}
+@media (min-width: 1024px) {
+  header section.seccionHeader div.contenedorIconosUserCart .iconoUsurCart {
+    transition: all 0.5s ease;
+  }
+  header section.seccionHeader div.contenedorIconosUserCart .iconoUsurCart:hover {
+    transform: scale(1.2);
+  }
+}
+header section.seccionHeader .navbarSecundario {
+  width: 25%;
+}
+header nav.navArtesanal {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header nav.navArtesanal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+  header nav.navArtesanal .listaNabVar {
+    list-style: none;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    width: 80%;
+  }
+  header nav.navArtesanal .listaNav {
+    transition: all 0.5s ease;
+  }
+  header nav.navArtesanal .listaNav:hover {
+    transform: scale(1.2);
+  }
+}
+
+main .nombreSeccion {
+  margin: 0.6rem;
+  width: 100%;
+}
+main .seccionCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "cards";
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  main .seccionCards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+main .seccionCards .cards {
+  width: 90%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5%;
+  border: solid 1px rgb(241, 241, 241);
+  margin: 0.6rem 0;
+}
+@media (min-width: 1024px) {
+  main .seccionCards .cards {
+    transition: all 0.2s;
+  }
+  main .seccionCards .cards:hover {
+    box-shadow: 0px 0px 30px 1px rgb(59, 59, 59);
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+}
+main .seccionCards .cards .contenedorImgCard {
+  background-color: rgb(241, 241, 241);
+  border-radius: 5% 5% 0 0;
+}
+main .seccionCards .cards .contenedorImgCard img {
+  width: 100%;
+  border-radius: 5% 5% 0 0;
+}
+main .seccionCards .cards .contenedorDescripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .seccionCards .cards .contenedorDescripcion .nameProducto {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-top: 0.6rem;
+}
+main .seccionCards .cards .contenedorDescripcion .priceProducto {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+main .seccionCards .cards .contenedorDescripcion .generoProducto {
+  font-size: 0.6rem;
+}
+@media (min-width: 768px) {
+  main .SeccionQuieresSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+  }
+}
+main .SeccionQuieresSomos .quienSomos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+@media (min-width: 768px) {
+  main .SeccionQuieresSomos .quienSomos {
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  main .SeccionQuieresSomos .quienSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+main .SeccionQuieresSomos .quienSomos .tituloQuienSomos {
+  margin-top: 0.6rem;
+}
+main .SeccionQuieresSomos .quienSomos .textQuienSomos {
+  margin: 0px 0.6rem 0.6rem 0.6rem;
+  text-align: justify;
+}
+main .SeccionQuieresSomos .quienSomos .invitacionRegistro {
+  margin: 0.6rem;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  main .SeccionQuieresSomos .quienSomos .btn-registrarse {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  main .SeccionQuieresSomos .quienSomos .btn-registrarse {
+    width: 30%;
+    transition: all 0.3s ease 0s;
+  }
+  main .SeccionQuieresSomos .quienSomos .btn-registrarse:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+  }
+}
+
+.btn-registrarse, main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro, main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion, main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro, main .contenedorResumen .btn-Comprar {
+  background-color: rgb(50, 161, 173);
+  width: 55%;
+  margin: 0.6rem;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  border: solid 1px rgb(30, 114, 123);
+}
+
+@media (min-width: 1024px) {
+  main .seccionCarrito {
+    display: flex;
+  }
+}
+main .contenedorProducto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: solid 1px rgb(211, 210, 210);
+}
+@media (min-width: 768px) {
+  main .contenedorProducto {
+    justify-content: normal;
+  }
+}
+@media (min-width: 1024px) {
+  main .contenedorProducto {
+    width: 50%;
+  }
+}
+main .contenedorProducto .contenedorImgProducto {
+  width: 35%;
+  border-right: solid 1px rgb(211, 210, 210);
+}
+@media (min-width: 768px) {
+  main .contenedorProducto .contenedorImgProducto {
+    width: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  main .contenedorProducto .contenedorImgProducto {
+    width: 40%;
+  }
+}
+main .contenedorProducto .contenedorDescripcionProducto {
+  width: 70%;
+  margin-left: 0.9rem;
+}
+main .contenedorResumen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.6rem;
+  border: solid 1px rgb(211, 210, 210);
+  padding: 0.6rem;
+}
+main .contenedorResumen .tituloResumen {
+  width: 100%;
+}
+main .contenedorResumen .cantidadProductos {
+  width: 70%;
+}
+main .contenedorResumen .totalPagar {
+  width: 30%;
+}
+main .contenedorResumen .btn-Comprar {
+  color: white;
+}
+@media (min-width: 768px) {
+  main .contenedorResumen .btn-Comprar {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  main .contenedorResumen .btn-Comprar {
+    transition: all 0.3s ease 0s;
+  }
+  main .contenedorResumen .btn-Comprar:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+  }
+}
+
+main .seccionFormularioInicioSesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .seccionFormularioInicioSesion .formularioInicioSesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 1.5rem;
+  gap: 0.3rem;
+}
+main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion {
+  width: 45%;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion {
+    width: 20%;
+    transition: all 0.3s ease 0s;
+  }
+  main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+  }
+}
+main .seccionFormularioInicioSesion .pie-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+  margin: 0.6rem;
+}
+main .seccionFormularioInicioSesion .pie-form a {
+  color: #9b9b9b;
+}
+main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0.6rem 0.6rem 1.5rem 0.6rem;
+}
+main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro {
+  width: 45%;
+  background-color: white;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro a {
+  color: rgb(30, 114, 123);
+}
+@media (min-width: 768px) {
+  main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro {
+    width: 20%;
+    transition: all 0.3s ease 0s;
+  }
+  main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+  }
+}
+
+main .seccionRegistrarse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .seccionRegistrarse .contenedorForm {
+  width: 90%;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1024px) {
+  main .seccionRegistrarse .contenedorForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+main .seccionRegistrarse .contenedorForm .formRegistro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 0.3rem;
+}
+main .seccionRegistrarse .contenedorForm .formRegistro .contenedorCheckbox {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+}
+main .seccionRegistrarse .contenedorForm .formRegistro .seleccionImagen {
+  font-size: 0.8rem;
+}
+main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro {
+  width: 60%;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+@media (min-width: 768px) {
+  main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro {
+    width: 20%;
+    transition: all 0.3s ease 0s;
+  }
+  main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro:hover {
+    cursor: pointer;
+    box-shadow: 0px 15px 20px rgb(50, 161, 173);
+    transform: translateY(-7px);
+  }
+}
+
+@media (min-width: 768px) {
+  footer .contenedorListaFooter {
+    margin-top: 0.6rem;
+  }
+}
+footer .contenedorListaFooter .listaFooter {
+  text-transform: uppercase;
+}
+footer .contenedorListaFooter .listaFooter .itemDeLista {
+  margin: 0.6rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  footer .contenedorListaFooter .listaFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+}
+footer .contenedorTarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "tarjetas";
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  footer .contenedorTarjetas {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  footer .contenedorTarjetas .tarjeta1 {
+    grid-column: 2/3;
+  }
+  footer .contenedorTarjetas .tarjeta5 {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 768px) {
+  footer .contenedorTarjetas {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+footer .contenedorTarjetas .tarjetas {
+  width: 75%;
+}
+@media (min-width: 768px) {
+  footer .contenedorTarjetas .tarjetas {
+    width: 45%;
+  }
+}
+footer .contenedorTarjetas .tarjetasFooter {
+  border-radius: 10%;
+  margin: 5px;
+}
+footer .footerRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem;
+  gap: 1.3rem;
+}
+footer .footerRedes .enlaceiconoRedesFooter {
+  text-decoration: none;
+}
+footer .footerRedes .enlaceiconoRedesFooter .iconoRedesFooter {
+  width: 45px;
+}
+@media (min-width: 1024px) {
+  footer .footerRedes .enlaceiconoRedesFooter .iconoRedesFooter {
+    transition: all 0.3s ease 0s;
+  }
+  footer .footerRedes .enlaceiconoRedesFooter .iconoRedesFooter:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+  }
+}
+footer .derechoDeAutor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

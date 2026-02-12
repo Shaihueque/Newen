@@ -1,0 +1,10 @@
+@use './variables' as *;
+
+.btn-registrarse{
+                background-color: $color-btn-primary;
+                width: 55%;
+                margin: $espacio-10px;
+                padding: $espacio-5px;
+                font-size: $espacio-20px;
+                border: solid 1px $color-btn-secundary;
+            }

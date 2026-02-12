@@ -1,0 +1,26 @@
+@use './variables' as *;
+
+/*responsive mobile*/
+@mixin tablet {
+    @media (min-width:$breackpoint-tables){
+        @content;
+    }
+}
+
+@mixin escritorio {
+    @media (min-width:$breackpoint-escritorio){
+        @content;
+    }
+}
+
+@mixin contenedor ($ancho-max : $ancho-maximo){
+    max-width: $ancho-max;
+    margin: 0 auto;
+    padding: 0 $padding-contenedor;
+}
+
+@mixin flex ($justify-content, $aling-items){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $aling-items;
+}

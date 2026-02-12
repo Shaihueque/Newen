@@ -1,0 +1,83 @@
+@use '../variables' as *;
+@use '../mixin';
+
+footer{
+    .contenedorListaFooter{
+        @include mixin.tablet{
+            margin-top: $espacio-10px;
+        }
+        .listaFooter{
+            text-transform: uppercase;
+            .itemDeLista{
+                margin: $espacio-10px;
+                font-size: $espacio-14px;
+            }
+
+            @include mixin.tablet{
+                @include mixin.flex(center, center);
+                gap: 150px;
+        }
+        }
+    }
+
+    .contenedorTarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "tarjetas";
+        justify-items: center;
+
+            @include mixin.tablet{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+                .tarjeta1{
+                    grid-column: 2 / 3;
+                }
+                .tarjeta5{
+                    grid-column: 2 / 3;
+                }
+            }
+            @include mixin.tablet{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+
+        .tarjetas{
+            width: 75%;
+
+            @include mixin.tablet{
+                width: 45%;
+            }
+        }
+
+        .tarjetasFooter{
+            border-radius: 10%;
+            margin: 5px;
+        }
+    }
+
+    .footerRedes{
+        @include mixin.flex (center, center);
+        margin: $espacio-20px;
+        gap: $espacio-20px;
+            .enlaceiconoRedesFooter{
+                text-decoration: none;
+            
+                .iconoRedesFooter{
+                    width: 45px;
+                    @include mixin.escritorio{
+                        transition: all 0.3s ease 0s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: translateY(-7px);
+                        }
+                    }
+                }
+            }
+    }
+
+    .derechoDeAutor{
+        @include mixin.flex (center, center);
+    }
+
+}

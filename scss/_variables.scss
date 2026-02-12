@@ -1,0 +1,50 @@
+
+/*TIPOGRAFIAS*/
+$tipografia-roboto-header: 'Roboto', sans-serif;
+$tipografia-Lato-main: 'Lato', sans-serif;
+
+/*COLORES DE FONDO Y LETRA*/
+$color-primary: black;
+$color-secundary: white;
+
+/*COLORES DE FONDO Y BORDER ESPECIFICOS*/
+$color-backybord-cards: rgb(241, 241, 241);
+$color-back-whoIam: rgb(59, 59, 59);
+$color-border-footer: #5f5e5e;
+$color-borde-imgproduct:rgb(211 210 210);
+
+/*COLORES DE BOTONES*/
+$color-btn-primary: rgb(50, 161, 173);
+$color-btn-secundary: rgb(30 114 123);
+
+/*MEDIDAS STANDAR rem*/
+$espacio-5px: 0.3rem;
+$espacio-8px: 0.5rem;
+$espacio-10px: 0.6rem;
+$espacio-12px: 0.8rem;
+$espacio-14px: 0.9rem;
+$espacio-16px: 1rem;
+$espacio-20px: 1.3rem;
+$espacio-24px: 1.5rem;
+
+/*MEDIDAS FIJAS ESPECIFICAS*/
+$tamaño-logo: 85px;
+$tamaño-icono-header: 45px;
+
+/*ANCHOS TRABAJADOS*/
+$ancho-100: 100%;
+$ancho-90: 90%;
+$ancho-80: 80%;
+$ancho-75: 75%;
+$ancho-70: 70%;
+$ancho-60: 60%;
+$ancho-55: 55%;
+$ancho-50: 50%;
+$ancho-35: 35%;
+$ancho-30: 30%;
+$ancho-25: 25%;
+$ancho-20: 20%;
+
+/*BREAKPOINTS*/
+$breackpoint-tables: 768px;
+$breackpoint-escritorio: 1024px;

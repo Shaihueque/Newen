@@ -1,0 +1,40 @@
+@use './variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer"; 
+}
+
+header{
+    grid-area: header; 
+    background-color: $color-primary;
+    color: $color-secundary;
+    font-family: $tipografia-roboto-header;
+}
+
+
+main{
+    grid-area: main;
+    font-family: $tipografia-Lato-main;
+    background-color: $color-secundary; 
+}
+
+footer{
+    grid-area: footer;
+    background-color: $color-primary;
+    color: $color-secundary; 
+    border-top: solid 1px $color-border-footer;
+}

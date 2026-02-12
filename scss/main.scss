@@ -1,0 +1,17 @@
+@use './variables';
+@use './mixin';
+
+@use './reset/reset';
+
+@use './base';
+
+@use './parcials/header';
+
+@use './pages/index';
+@use './pages/buzos';
+@use './pages/carrito';
+@use './pages/iniciarSesion';
+@use './pages/registrarse';
+@use './pages/remeras';
+
+@use './parcials/footer';

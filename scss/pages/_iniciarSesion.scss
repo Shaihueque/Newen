@@ -1,0 +1,84 @@
+@use '../variables' as *;
+@use '../mixin';
+@use '../extend' as *;
+
+main{
+    .seccionFormularioInicioSesion{
+        @include mixin.flex(center, center);
+        flex-wrap: wrap;
+
+        .formularioInicioSesion{
+            @include mixin.flex(center, center);
+            flex-direction: column;
+            width: 80%;
+            margin-top: $espacio-24px;
+            gap: $espacio-5px;
+
+            .btn-IniciarSesion{
+                @extend.btn-registrarse;
+                width: 45%;
+                color: $color-secundary;
+                margin: $espacio-8px;
+                padding: $espacio-8px;
+
+                @include mixin.tablet{
+                    width: 30%;
+                }
+                @include mixin.escritorio{
+                    width: 20%;
+                    transition: all 0.3s ease 0s;
+
+                        &:hover{
+                            cursor: pointer;
+                            box-shadow: 0px 15px 20px $color-btn-primary;
+                            transform: translateY(-7px);
+                        }
+                }
+            }
+        }
+
+        .pie-form{
+            @include mixin.flex(center, center);
+            width: 80%;
+            flex-direction: column;
+            margin: $espacio-10px;
+
+            a{
+                color: #9b9b9b
+            }
+        }
+
+        .RegistroDesdeInicioSesion{
+            @include mixin.flex(center, center);
+            flex-direction: column;
+            width: 80%;
+            margin: $espacio-10px $espacio-10px $espacio-24px $espacio-10px;
+
+            .btn-IrRegistro{
+                @extend.btn-registrarse;
+                width: 45%;
+                background-color: $color-secundary;
+                margin: $espacio-5px;
+                padding: $espacio-5px;
+                font-size: $espacio-16px;
+                
+                a{
+                    color: $color-btn-secundary;
+                }
+                @include mixin.tablet{
+                    width: 30%;
+                }
+                @include mixin.escritorio{
+                    width: 20%;
+                    transition: all 0.3s ease 0s;
+
+                    &:hover{
+                            cursor: pointer;
+                            box-shadow: 0px 15px 20px $color-btn-primary;
+                            transform: translateY(-7px);
+                        }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@use '../variables' as *;
+@use '../mixin';
+
+main{
+    .nombreSeccion{
+        margin: $espacio-10px;
+        width: 100%;
+    }
+
+    .seccionCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cards";
+        justify-items: center;
+        
+        @include mixin.tablet{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .cards{
+            width: 90%;
+            background-color: $color-backybord-cards;
+            border-radius: 5%;
+            border: solid 1px $color-backybord-cards;
+            margin: $espacio-10px 0;
+
+            @include mixin.escritorio{
+                 transition: all .2s;
+                 &:hover{
+                    box-shadow: 0px 0px 30px 1px rgba(59, 59, 59);
+                    transform: scale(0.98);
+                    border-radius: 20px;
+                 }
+            }
+
+            .contenedorImgCard{
+                background-color: $color-backybord-cards;
+                border-radius: 5% 5% 0 0;
+
+                img{
+                    width: 100%;
+                    border-radius: 5% 5% 0 0 ;
+                }
+            }
+
+            .contenedorDescripcion{
+                @include mixin.flex (center, center);
+                flex-direction: column;
+
+                .nameProducto{
+                    font-size: $espacio-14px;
+                    font-weight: bold;  
+                    padding-top: $espacio-10px;
+                }
+                .priceProducto{
+                    font-size: $espacio-12px;
+                    font-weight: bold;
+                }
+                .generoProducto{
+                    font-size: $espacio-10px;
+                }
+            }
+        }
+    }
+
+    .SeccionQuieresSomos{
+        @include mixin.tablet{
+            @include mixin.flex(center, center);
+            background-color: $color-back-whoIam;
+        }
+        .quienSomos{
+            @include mixin.flex (center, center);
+                flex-wrap: wrap;
+                background-color: $color-back-whoIam;
+                color: $color-secundary;
+
+                @include mixin.tablet{
+                    width: 90%;
+                }
+                @include mixin.escritorio{
+                    @include mixin.flex(center, center);
+                    width: 80%;
+                    flex-wrap: wrap;
+                    flex-direction: column;    
+                }
+                
+
+                .tituloQuienSomos{
+                    margin-top: $espacio-10px;
+                }
+
+                .textQuienSomos {
+                    margin: 0px $espacio-10px $espacio-10px $espacio-10px;
+                    text-align: justify;
+                }
+
+                .invitacionRegistro{
+                    margin: $espacio-10px;
+                    text-align: justify;
+                }
+
+                .btn-registrarse{
+                    @extend.btn-registrarse;
+
+                    @include mixin.tablet{
+                        width: 40%;
+                    }
+                    @include mixin.escritorio{
+                        width: 30%;
+                        transition: all 0.3s ease 0s;
+                            &:hover{
+                            cursor: pointer;
+                            box-shadow: 0px 15px 20px $color-btn-primary;
+                            transform: translateY(-7px);
+                        }
+                    }
+                }
+            }
+    }
+}
