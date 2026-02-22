@@ -1,2 +1,70 @@
 @use '../variables' as *;
-@use '../mixin' as *;
+@use '../mixin';
+@use '../extend' as *;
+
+
+main{
+
+        .contenedorDelProducto{
+            @include mixin.flex(center, center);
+            flex-direction: column;
+
+            @include mixin.tablet{
+                        @include mixin.flex(center, center);
+                        flex-direction: row;
+
+                        .contenedorImgDetailProduct{
+                            width: 50%;
+                        }
+
+                        .contenedorDetailySeleccyBtn{
+                            @include mixin.flex(center, center);
+                            flex-direction: column;
+                            width: 50%;
+                        }
+                    }
+
+                    @include mixin.escritorio{
+                        width: 90%;
+
+                        .contenedorImgDetailProduct{
+                            width: 45%;
+                        }
+
+                        .contenedorDetailySeleccyBtn{
+                            width: 45%;
+                        }
+                    }
+
+            .detallesDelProducto{
+                @include mixin.flex(center, center);
+                flex-direction: column;
+                margin: $espacio-8px;
+            }
+            .contenedorSeleccionesyBtn{
+                @include mixin.flex(center, center);
+                flex-direction: column;
+
+                }
+
+                .contenedorSelecciones{
+                    display: flex;
+                    align-items: center;
+                    gap: $espacio-8px;
+
+                    .selectores{
+                        height: $espacio-24px;
+                        margin: $espacio-8px;
+                        width: 2.5rem;
+                    }
+                }
+                .btn-agregarCarrito{
+                    @extend.btn-registrarse;
+                    width: 80%;
+                    color: $color-secundary;
+                    margin: $espacio-8px;
+                    padding: $espacio-8px;
+                    margin: $espacio-8px;
+                }
+            }
+        }

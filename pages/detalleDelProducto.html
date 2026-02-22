@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Detalle del producto</title>
 </head>
 <body>
@@ -86,59 +86,85 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <div>
+        <section class="seccionProductoElegido">
+            <div class="contenedorDelProducto">
+                <div class="contenedorImgDetailProduct">
                     <img src="../Assest/img/remera_oversize_azulmarino.png" alt="Remera Oversize Azul Marino">
                 </div>
-                <div>
-                    <p>Nombre del producto</p>
-                    <p>Precio</p>
-                    <p>Detalle del producto</p>
-                </div>
-                <div>
-                    <label>Talle:</label>
-                    <select multiple>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+                <div class="contenedorDetailySeleccyBtn">
+                    <div class="detallesDelProducto">
+                        <p>Remera Azul Marino</p>
+                        <p>$9500</p>
+                        <p>Oversize, 100% algodon</p>
+                    </div>
+                    <div class="contenedorSeleccionesyBtn">
+                        <div class="contenedorSelecciones">
+                            <label>Talle:</label>
+                            <select class="selectores">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
 
-                    <label>Catidad:</label>
-                    <select multiple>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                            <label>Catidad:</label>
+                            <select class="selectores">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
 
-                    <button type="submit">Agregar al carrito</button>
+                        <button type="submit" class="btn-agregarCarrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <p>Tambien podria interesarte</p>
+        <h3 class="nombreSeccion">Tambien podria interesarte</h3>
 
-            <div>
-                    <div>
+        <section class="seccionCards">
+          
+                <div class="cards card1">
+                    <div class="contenedorImgCard">
                         <img src="../Assest/img/remera_oversize_negra.png" alt="Remera Oversize Negra">
                     </div>
-                    <div>
-                        <p>Nombre del producto</p>
-                        <p>Precio</p>
-                        <p>Genero</p>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Negra</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
                     </div>
-
-                     <div>
+                </div>
+                <div class="cards card2">
+                     <div class="contenedorImgCard">
                         <img src="../Assest/img/remera_oversize_verdepino.png" alt="Remera Oversize Verde pino">
                     </div>
-                    <div>
-                        <p>Nombre del producto</p>
-                        <p>Precio</p>
-                        <p>Genero</p>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Verde Pino</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
+                    </div>
+                </div>
+                <div class="cards cards">
+                    <div class="contenedorImgCard">
+                        <img src="../Assest/img/remera_oversize_blanca.png" alt="Remera Oversize blanca">
+                    </div>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Blanca</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
+                    </div>
+                </div>
+                <div class="cards cards">
+                    <div class="contenedorImgCard">
+                        <img src="../Assest/img/remera_oversize_azulmarino.png" alt="Remera Oversize azulmarino">
+                    </div>
+                    <div class="contenedorDescripcion">
+                        <p class="nameProducto">Remera Azulmarino</p>
+                        <p class="priceProducto">$9500</p>
+                        <p class="generoProducto">Masculino</p>
                     </div>
                 </div>
         </section>
