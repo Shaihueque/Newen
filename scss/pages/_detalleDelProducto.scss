@@ -4,67 +4,72 @@
 
 
 main{
-
-        .contenedorDelProducto{
+        .seccionProductoElegido{
             @include mixin.flex(center, center);
-            flex-direction: column;
+            .contenedorDelProducto{
+                @include mixin.flex(center, center);
+                flex-direction: column;
 
-            @include mixin.tablet{
-                        @include mixin.flex(center, center);
-                        flex-direction: row;
-
-                        .contenedorImgDetailProduct{
-                            width: 50%;
-                        }
-
-                        .contenedorDetailySeleccyBtn{
+                @include mixin.tablet{
                             @include mixin.flex(center, center);
-                            flex-direction: column;
-                            width: 50%;
+                            flex-direction: row;
+
+                            .contenedorImgDetailProduct{
+                                width: 50%;
+                            }
+
+                            .contenedorDetailySeleccyBtn{
+                                @include mixin.flex(center, center);
+                                flex-direction: column;
+                                width: 50%;
+                            }
                         }
-                    }
 
-                    @include mixin.escritorio{
-                        width: 90%;
+                        @include mixin.escritorio{
+                            width: 90%;
+                            border-bottom: 1px solid $color-borde-imgproduct;
+                            border-right: 1px solid $color-borde-imgproduct;
+                            border-left: 1px solid $color-borde-imgproduct;
 
-                        .contenedorImgDetailProduct{
-                            width: 45%;
                         }
 
-                        .contenedorDetailySeleccyBtn{
-                            width: 45%;
-                        }
-                    }
-
-            .detallesDelProducto{
-                @include mixin.flex(center, center);
-                flex-direction: column;
-                margin: $espacio-8px;
-            }
-            .contenedorSeleccionesyBtn{
-                @include mixin.flex(center, center);
-                flex-direction: column;
-
+                .detallesDelProducto{
+                    @include mixin.flex(center, center);
+                    flex-direction: column;
+                    margin: $espacio-8px;
                 }
+                .contenedorSeleccionesyBtn{
+                    @include mixin.flex(center, center);
+                    flex-direction: column;
+                    gap: $espacio-10px;
 
-                .contenedorSelecciones{
-                    display: flex;
-                    align-items: center;
-                    gap: $espacio-8px;
+                    }
 
-                    .selectores{
-                        height: $espacio-24px;
+                    .contenedorSelecciones{
+                        display: flex;
+                        align-items: center;
+                        gap: $espacio-8px;
+
+                        .selectores{
+                            height: $espacio-24px;
+                            margin: $espacio-8px;
+                            width: 2.5rem;
+                        }
+                    }
+                    .btn-agregarCarrito{
+                        @extend.btn-registrarse;
+                        width: 80%;
+                        color: $color-secundary;
                         margin: $espacio-8px;
-                        width: 2.5rem;
+                        padding: $espacio-8px;
+                        margin: $espacio-8px;
+
+                        &:hover{
+                            cursor: pointer;
+                            box-shadow: 0px 15px 20px $color-btn-primary;
+                            transform: translateY(-7px);
+                        }
                     }
                 }
-                .btn-agregarCarrito{
-                    @extend.btn-registrarse;
-                    width: 80%;
-                    color: $color-secundary;
-                    margin: $espacio-8px;
-                    padding: $espacio-8px;
-                    margin: $espacio-8px;
-                }
-            }
         }
+}

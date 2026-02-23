@@ -13,6 +13,10 @@ a {
   color: white;
 }
 
+.aDetalleDelProducto {
+  color: black;
+}
+
 ul {
   list-style: none;
 }
@@ -289,7 +293,7 @@ main .SeccionQuieresSomos .quienSomos .invitacionRegistro {
   }
 }
 
-.btn-registrarse, main .contenedorDelProducto .btn-agregarCarrito, main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro, main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion, main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro, main .contenedorResumen .btn-Comprar {
+.btn-registrarse, main .seccionProductoElegido .contenedorDelProducto .btn-agregarCarrito, main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro, main .seccionFormularioInicioSesion .formularioInicioSesion .btn-IniciarSesion, main .seccionFormularioInicioSesion .RegistroDesdeInicioSesion .btn-IrRegistro, main .contenedorResumen .btn-Comprar {
   background-color: rgb(50, 161, 173);
   width: 55%;
   margin: 0.6rem;
@@ -515,23 +519,28 @@ main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro {
   }
 }
 
-main .contenedorDelProducto {
+main .seccionProductoElegido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .seccionProductoElegido .contenedorDelProducto {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  main .contenedorDelProducto {
+  main .seccionProductoElegido .contenedorDelProducto {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  main .contenedorDelProducto .contenedorImgDetailProduct {
+  main .seccionProductoElegido .contenedorDelProducto .contenedorImgDetailProduct {
     width: 50%;
   }
-  main .contenedorDelProducto .contenedorDetailySeleccyBtn {
+  main .seccionProductoElegido .contenedorDelProducto .contenedorDetailySeleccyBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,45 +549,48 @@ main .contenedorDelProducto {
   }
 }
 @media (min-width: 1024px) {
-  main .contenedorDelProducto {
+  main .seccionProductoElegido .contenedorDelProducto {
     width: 90%;
-  }
-  main .contenedorDelProducto .contenedorImgDetailProduct {
-    width: 45%;
-  }
-  main .contenedorDelProducto .contenedorDetailySeleccyBtn {
-    width: 45%;
+    border-bottom: 1px solid rgb(211, 210, 210);
+    border-right: 1px solid rgb(211, 210, 210);
+    border-left: 1px solid rgb(211, 210, 210);
   }
 }
-main .contenedorDelProducto .detallesDelProducto {
+main .seccionProductoElegido .contenedorDelProducto .detallesDelProducto {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0.5rem;
 }
-main .contenedorDelProducto .contenedorSeleccionesyBtn {
+main .seccionProductoElegido .contenedorDelProducto .contenedorSeleccionesyBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 0.6rem;
 }
-main .contenedorDelProducto .contenedorSelecciones {
+main .seccionProductoElegido .contenedorDelProducto .contenedorSelecciones {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-main .contenedorDelProducto .contenedorSelecciones .selectores {
+main .seccionProductoElegido .contenedorDelProducto .contenedorSelecciones .selectores {
   height: 1.5rem;
   margin: 0.5rem;
   width: 2.5rem;
 }
-main .contenedorDelProducto .btn-agregarCarrito {
+main .seccionProductoElegido .contenedorDelProducto .btn-agregarCarrito {
   width: 80%;
   color: white;
   margin: 0.5rem;
   padding: 0.5rem;
   margin: 0.5rem;
+}
+main .seccionProductoElegido .contenedorDelProducto .btn-agregarCarrito:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 20px rgb(50, 161, 173);
+  transform: translateY(-7px);
 }
 
 @media (min-width: 768px) {
