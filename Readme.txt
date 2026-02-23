@@ -1,7 +1,6 @@
 - Actualizacion -Por tiempos no agrege nuevamente los pseudoclases para mobile / tablets :S
 
-- New -La utilizacion de scss se complico algo en un principio hasta que encontre errores, siento que la anidacion no lo utilice de la mejor manera pero es funcional como en la anterior entrega. 
-Ademas, use extend capaz no de la mejor manera pero funciona, igual que los mixin aunque capaz con mas tiempo podria encontrar haces unos mixines mas y simlificar en algunas page algo de codigo Pero por ahora quedoa asi.
+- New -Se optimizo las imagenes, paso de pesar todas las imagenes 22 mb a 8.5 mb.
 
 -Las imagenes son todas de IA, agregue buzos pero no logre que la ia me las haga exactamente con el mismo fondo, es algo estetico pero la funcionalidad creo que lo logre, ya me diran. 
 

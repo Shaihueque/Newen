@@ -4,6 +4,9 @@
 
 
 main{
+    .h1TituloProducto{
+        margin: $espacio-10px;
+    }
         .seccionProductoElegido{
             @include mixin.flex(center, center);
             .contenedorDelProducto{
@@ -27,10 +30,7 @@ main{
 
                         @include mixin.escritorio{
                             width: 90%;
-                            border-bottom: 1px solid $color-borde-imgproduct;
-                            border-right: 1px solid $color-borde-imgproduct;
-                            border-left: 1px solid $color-borde-imgproduct;
-
+                            border: 1px solid $color-borde-imgproduct;
                         }
 
                 .detallesDelProducto{

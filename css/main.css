@@ -519,6 +519,9 @@ main .seccionRegistrarse .contenedorForm .formRegistro .btn-registro {
   }
 }
 
+main .h1TituloProducto {
+  margin: 0.6rem;
+}
 main .seccionProductoElegido {
   display: flex;
   justify-content: center;
@@ -551,9 +554,7 @@ main .seccionProductoElegido .contenedorDelProducto {
 @media (min-width: 1024px) {
   main .seccionProductoElegido .contenedorDelProducto {
     width: 90%;
-    border-bottom: 1px solid rgb(211, 210, 210);
-    border-right: 1px solid rgb(211, 210, 210);
-    border-left: 1px solid rgb(211, 210, 210);
+    border: 1px solid rgb(211, 210, 210);
   }
 }
 main .seccionProductoElegido .contenedorDelProducto .detallesDelProducto {
