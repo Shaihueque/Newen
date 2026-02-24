@@ -1,6 +1,8 @@
-- New -Se optimizo las imagenes, paso de pesar todas las imagenes 22 mb a 8.5 mb. Los iconos tmb fueron optimizados.
+- New -Se optimizo las imagenes, paso de pesar todas las imagenes 22 mb a 8.5 mb. Los iconos tmb fueron optimizados. Todas las imagenes utilizadas en las page no pesan mas de 1mb, la mas pesada utilizada pesa 668kb.
 
 - New -Si se hace click en la card de remera azul marino de el inicio/index ira a el detalle del producto, el cual esa en scss que fue algo que me olvide de hacer en el tp anterior.
+
+-New- se corrigio algunas letras de secciones que estaban en maysucula y no ahbia dado cuenta hasta la correcion del tp.
 
 -Las imagenes son todas de IA, agregue buzos pero no logre que la ia me las haga exactamente con el mismo fondo, es algo estetico pero la funcionalidad creo que lo logre, ya me diran. 
 
